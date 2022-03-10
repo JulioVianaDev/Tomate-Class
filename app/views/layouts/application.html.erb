@@ -6,7 +6,11 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <!-- IMPORTANDO OS CSS-->
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "home", "data-turbo-track": "reload" %>
+
+    <!-- IMPORTANDO OS JS-->
     <%= javascript_importmap_tags %>
   </head>
 
@@ -38,5 +42,7 @@
     </nav>
 
     <%= yield %>
+
+    Rodapé
   </body>
 </html>
