@@ -10,12 +10,30 @@ body{
 
 .home{
     height:80vh;
+    padding: 200px;
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns: 30vw 40vw;
+    grid-column-gap: 10vw;
 }
 
-.text{
-   width: 50%; 
+.information{ 
    padding: 30px;
+   border: 2px rgba(161, 211, 233, 0.92) solid;
+   border-radius: 0 50px 0 50px;
 }
 
 .title{
+    font-size:2rem;
+}
+
+.subtitle{
+    font-size: 1rem;
+}
+
+/*tela pequena*/
+@media screen and (max-width: 450px){
+    .home{
+        grid-template-columns: 85vw;
+    }
 }

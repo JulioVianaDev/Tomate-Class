@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 #minhas gems 
 gem 'bootstrap', '~> 5.1.3'
 gem 'jquery-rails'
-
+gem 'devise'
 
 ruby "3.0.3"
 

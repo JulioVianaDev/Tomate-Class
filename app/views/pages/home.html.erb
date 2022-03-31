@@ -1,15 +1,15 @@
 <div class="home">
-    <div class="text">
+    <div class="information">
         <h1 class="title">Bem vindo a Tomate Class</h1>
-        <p> bora programar?<p>
+        <p class="subtitle"> Bora programar?<p>
         <hr class="my-4">
-        <p> é com muita alegria que vocês estão cursando nesta instituição</p>
+        <p class="text"> É com muita alegria que vocês estão cursando nesta instituição</p>
         <p class="lead">
-            <p> não está cursando?Cadastre-se</p>
-            <%= link_to "Cadastrar",root_path,class: "btn btn-primary btn-lg"%>
+            <p> Ainda não está cursando? Cadastre-se!</p>
+            <%= link_to "Cadastrar",new_user_registration_path,class: "btn btn-primary btn-lg"%>
         <p>
     </div>
     <div class="imagem">
-
+        <%= image_tag("home.png", :alt => "rss feed") %>
     </div>
 </div>
