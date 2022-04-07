@@ -2,13 +2,41 @@
 
 <h1>Tweets</h1>
 
+<div class="container">
+  <div class ="row">
+    <div class="col-4">
+        <div class="container">
+          <div id="tweets">
+            <% @tweets.each do |tweet| %>
+              <div class="card">
+                <div class="face face1">
+                  <div class="content">
+                    <span class="stars"></span>
+                    <%= render tweet %>
+                  </div>
+                </div>
+                <div class="face face2">
+                  <p>
+                    <%= link_to "Mostrar esta tweet", tweet %>
+                  </p>
+                </div>
+              </div>
+            <% end %>
+          </div>    
+        </div>
+    </div>
+     <div class="col-8">
+
+    </div>
+  </div>
+</div>
 <div id="tweets">
   <% @tweets.each do |tweet| %>
     <%= render tweet %>
     <p>
-      <%= link_to "Show this tweet", tweet %>
+      <%= link_to "Mostrar esta tweet", tweet %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "New tweet", new_tweet_path %>
+<%= link_to "Novo Tweet", new_tweet_path %>
