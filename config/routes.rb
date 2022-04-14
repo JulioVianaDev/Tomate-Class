@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :rooms
   resources :tweets
   devise_for :users
   root 'pages#home'

@@ -1,12 +1,19 @@
 <p style="color: green"><%= notice %></p>
-
-<%= render @tweet %>
-
+<div class="container">
+  <div id="tweets">
+      <div class="card">
+        <div class="face face1">
+          <div class="content">
+            <span class="stars"></span>
+            <%= render @tweet %>
+          </div>
+        </div>
+      </div>
+  </div>    
 <div>
-
-  <%= link_to "Voltar para tweets", tweets_path %>
-  
+  <div class="background-animated">
+    <%= link_to "Voltar para tweets", tweets_path %>
     <%= link_to "Editar este tweet", edit_tweet_path(@tweet) %> |
     <%= button_to "Destrua agora,me arrependi", @tweet, method: :delete %>
-  
+  </div>
 </div>

@@ -11,6 +11,7 @@
     <%= stylesheet_link_tag "home", "data-turbo-track": "reload" %>
     <%= stylesheet_link_tag "GlobalStyle", "data-turbo-track": "reload" %>
     <%= stylesheet_link_tag "card", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "animation", "data-turbo-track": "reload" %>
 
     <!-- IMPORTANDO OS JS-->
     <%= javascript_importmap_tags %>
@@ -33,7 +34,7 @@
               <%= link_to "Tweets", tweets_path, class: "nav-link active" %>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <%= link_to "Chat", rooms_path, class: "nav-link active" %>
             </li>
             <li class="nav-item">
               <a class="nav-link disabled">Disabled</a>

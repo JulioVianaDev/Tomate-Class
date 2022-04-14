@@ -4,7 +4,7 @@
 
 <div class="container">
   <div class ="row">
-    <div class="col-4">
+    <div class="col-8">
         <div class="container">
           <div id="tweets">
             <% @tweets.each do |tweet| %>
@@ -17,7 +17,7 @@
                 </div>
                 <div class="face face2">
                   <p>
-                    <%= link_to "Mostrar esta tweet", tweet %>
+                    <%= link_to "Mostrar este tweet", tweet %>
                   </p>
                 </div>
               </div>
@@ -25,18 +25,10 @@
           </div>    
         </div>
     </div>
-     <div class="col-8">
+     <div class="col-4">
 
     </div>
   </div>
-</div>
-<div id="tweets">
-  <% @tweets.each do |tweet| %>
-    <%= render tweet %>
-    <p>
-      <%= link_to "Mostrar esta tweet", tweet %>
-    </p>
-  <% end %>
 </div>
 
 <%= link_to "Novo Tweet", new_tweet_path %>

@@ -5,4 +5,5 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
          has_many :tweets
+  scope :all_except,-> (user) {where.not(id: user)}
 end
