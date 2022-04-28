@@ -10,7 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_04_14_200258) do
+ActiveRecord::Schema[7.0].define(version: 2022_04_28_194133) do
+  create_table "drips", force: :cascade do |t|
+    t.string "nome"
+    t.string "pants"
+    t.integer "pricepants"
+    t.string "blusa"
+    t.integer "priceblusa"
+    t.string "bone"
+    t.integer "pricebone"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "rooms", force: :cascade do |t|
     t.string "name"
     t.boolean "is_private", default: false

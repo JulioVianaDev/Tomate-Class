@@ -1,0 +1,52 @@
+<%= form_with(model: drip) do |form| %>
+  <% if drip.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(drip.errors.count, "error") %> prohibited this drip from being saved:</h2>
+
+      <ul>
+        <% drip.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :nome, style: "display: block" %>
+    <%= form.text_field :nome %>
+  </div>
+
+  <div>
+    <%= form.label :pants, style: "display: block" %>
+    <%= form.text_field :pants %>
+  </div>
+
+  <div>
+    <%= form.label :pricepants, style: "display: block" %>
+    <%= form.number_field :pricepants %>
+  </div>
+
+  <div>
+    <%= form.label :blusa, style: "display: block" %>
+    <%= form.text_field :blusa %>
+  </div>
+
+  <div>
+    <%= form.label :priceblusa, style: "display: block" %>
+    <%= form.number_field :priceblusa %>
+  </div>
+
+  <div>
+    <%= form.label :bone, style: "display: block" %>
+    <%= form.text_field :bone %>
+  </div>
+
+  <div>
+    <%= form.label :pricebone, style: "display: block" %>
+    <%= form.number_field :pricebone %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

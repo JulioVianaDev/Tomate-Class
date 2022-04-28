@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Drips</h1>
+
+<div id="drips">
+  <% @drips.each do |drip| %>
+    <%= render drip %>
+    <p>
+      <%= link_to "Show this drip", drip %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New drip", new_drip_path %>

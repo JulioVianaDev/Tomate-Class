@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  pants: MyString
+  pricepants: 1
+  blusa: MyString
+  priceblusa: 1
+  bone: MyString
+  pricebone: 1
+
+two:
+  nome: MyString
+  pants: MyString
+  pricepants: 1
+  blusa: MyString
+  priceblusa: 1
+  bone: MyString
+  pricebone: 1

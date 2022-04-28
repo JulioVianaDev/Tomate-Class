@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @drip %>
+
+<div>
+  <%= link_to "Edit this drip", edit_drip_path(@drip) %> |
+  <%= link_to "Back to drips", drips_path %>
+
+  <%= button_to "Destroy this drip", @drip, method: :delete %>
+</div>
